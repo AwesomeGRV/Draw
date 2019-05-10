@@ -1,11 +1,27 @@
-from turtle import *
+import random
+import turtle
+elsa = turtle.Turtle()
 
-def snow(a, order):
-  if order >0:
-     for d in [60, -120, 60, 0]:
-         forward(a/3)
-         left(d)
+turtle.Screen().bgcolor("grey")
+colours = ["cyan" , "purple", "white", "blue"]
 
-snow(100,0)
-pensize(4)
-snow(100,1)
+elsa.penup()
+elsa.forward(90)
+elsa.left(45)
+elsa.pendown()
+
+def branch():
+  for i in range(3):
+    for i in range(3):
+        elsa.forward(30)
+        elsa.backward(30)
+        elsa.right(45)
+    elsa.left(90)
+    elsa.backward(30)
+    elsa.left(45)
+  elsa.right(90)
+  elsa.forward(90)
+
+for i in range(8):
+    branch()
+    elsa.left(45)
