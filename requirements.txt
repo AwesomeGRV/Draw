@@ -1,0 +1,20 @@
+# Draw Programs Collection - Requirements
+# All dependencies are part of Python standard library
+
+# Required Python version
+python>=3.6
+
+# Standard library modules (included with Python)
+# turtle - Graphics library for drawing patterns
+# random - Random number generation
+# string - String operations and constants
+# time - Time-related functions
+# sys - System-specific parameters and functions
+
+# Note: No external packages need to be installed via pip
+# All programs use only Python standard library modules
+
+# For development and testing (optional)
+# pytest>=6.0.0
+# black>=21.0.0
+# flake8>=3.8.0
