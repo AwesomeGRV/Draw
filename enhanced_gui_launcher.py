@@ -191,6 +191,20 @@ class EnhancedGUILauncher:
                 'rating': 3.9,
                 'users': '720'
             },
+            'grv_styles': {
+                'name': 'GRV Text Styles',
+                'description': 'Display GRV in 10 different artistic styles',
+                'category': 'Fun',
+                'file': 'grv_styles.py',
+                'icon': '🎨',
+                'color': '#E91E63',
+                'gradient': '#F06292',
+                'requirements': [],
+                'difficulty': 'Beginner',
+                'features': ['10 artistic styles', 'ASCII art', 'Pattern designs'],
+                'rating': 4.7,
+                'users': '420'
+            },
             'mathstables': {
                 'name': 'Multiplication Table Generator',
                 'description': 'Customizable multiplication tables with export',

@@ -114,6 +114,17 @@ class WebLauncher:
                 'difficulty': 'Intermediate',
                 'features': ['Evolution visualization', 'Performance metrics', 'Configurable parameters']
             },
+            'grv_styles': {
+                'name': 'GRV Text Styles',
+                'description': 'Display GRV in 10 different artistic styles',
+                'category': 'Fun',
+                'file': 'grv_styles.py',
+                'icon': '🎨',
+                'color': '#E91E63',
+                'requirements': [],
+                'difficulty': 'Beginner',
+                'features': ['10 artistic styles', 'ASCII art', 'Pattern designs']
+            },
             'mathstables': {
                 'name': 'Multiplication Table Generator',
                 'description': 'Generates customizable multiplication tables',
