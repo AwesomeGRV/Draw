@@ -360,8 +360,66 @@ def main():
     print("Checking dependencies...")
     check_dependencies()
     
-    launcher = ProgramLauncher()
-    launcher.run()
+    print("\n🚀 Advanced Graphics & Algorithms Suite")
+    print("=" * 50)
+    print("Choose launcher type:")
+    print("1. Enhanced GUI Launcher (Recommended) - Modern animated interface")
+    print("2. Web-Based Launcher - Browser-based interface")
+    print("3. Basic GUI Launcher - Simple button interface")
+    print("4. CLI Launcher - Traditional command-line")
+    
+    choice = input("Enter choice (1-4): ").strip()
+    
+    if choice == "1":
+        try:
+            import enhanced_gui_launcher
+            enhanced_gui_launcher.main()
+        except ImportError:
+            print("Enhanced GUI not available. Falling back to basic GUI...")
+            try:
+                import gui_launcher
+                gui_launcher.main()
+            except ImportError:
+                print("GUI launchers not available. Falling back to CLI...")
+                launcher = ProgramLauncher()
+                launcher.run()
+        except Exception as e:
+            print(f"Error starting enhanced GUI: {e}")
+            print("Falling back to CLI launcher...")
+            launcher = ProgramLauncher()
+            launcher.run()
+    elif choice == "2":
+        try:
+            import web_launcher
+            web_launcher.main()
+        except ImportError:
+            print("Web launcher not available. Falling back to GUI...")
+            try:
+                import enhanced_gui_launcher
+                enhanced_gui_launcher.main()
+            except ImportError:
+                try:
+                    import gui_launcher
+                    gui_launcher.main()
+                except ImportError:
+                    launcher = ProgramLauncher()
+                    launcher.run()
+        except Exception as e:
+            print(f"Error starting web launcher: {e}")
+            print("Falling back to CLI launcher...")
+            launcher = ProgramLauncher()
+            launcher.run()
+    elif choice == "3":
+        try:
+            import gui_launcher
+            gui_launcher.main()
+        except ImportError:
+            print("Basic GUI not available. Falling back to CLI...")
+            launcher = ProgramLauncher()
+            launcher.run()
+    else:
+        launcher = ProgramLauncher()
+        launcher.run()
 
 
 if __name__ == "__main__":

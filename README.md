@@ -32,7 +32,8 @@ A comprehensive collection of educational and advanced Python programs demonstra
 
 ```
 draw/
-├── main.py              # Enhanced main launcher with dependency checking
+├── main.py              # Enhanced main launcher with GUI/CLI choice
+├── gui_launcher.py      # NEW: Modern graphical launcher with buttons
 ├── fractals.py          # Advanced fractal generator with GUI
 ├── data_viz.py          # Interactive data visualization suite
 ├── ml_patterns.py       # Machine learning pattern recognition
@@ -107,6 +108,14 @@ python mathstables.py    # Multiplication tables
 - **Visual Effects**: Starfields, wave simulations
 - **Features**: Real-time physics, interactive controls, multiple animation types
 
+#### 10. GUI Launcher (`gui_launcher.py`)
+- **Modern Interface**: Clean, professional GUI with categorized buttons
+- **One-Click Launch**: Click any program button to execute it instantly
+- **Visual Organization**: Programs grouped by category with icons
+- **Dependency Checking**: Automatic verification before launching
+- **Status Updates**: Real-time feedback on program launches
+- **Fallback Support**: Gracefully falls back to CLI if GUI fails
+
 #### 5. Configuration Manager (`config_manager.py`)
 - **Settings Management**: Window preferences, themes, graphics settings
 - **User Profiles**: Skill levels, preferred modules, custom settings
@@ -137,11 +146,24 @@ python mathstables.py    # Multiplication tables
 
 ## Usage Guide
 
-### Main Launcher
-When you run `python main.py`, you'll see a categorized menu with options for all programs.
+### GUI Launcher (Recommended)
+Run the graphical interface for easy program access:
+```bash
+python gui_launcher.py
+```
 
-### Dependency Checking
-The launcher automatically checks for required dependencies and provides installation guidance for missing modules.
+The GUI launcher provides:
+- **Categorized program buttons** organized by type (Graphics, ML, Data Science, etc.)
+- **One-click launching** - just click any program button to execute it
+- **Dependency checking** - automatic verification before launching programs
+- **Status updates** - real-time feedback on program launches
+- **Modern interface** - clean, professional design with icons
+
+### CLI Launcher
+Traditional command-line interface:
+```bash
+python main.py
+```
 
 ### Individual Program Execution
 Each program can also be run directly:
@@ -152,6 +174,9 @@ python ml_patterns.py     # ML pattern recognition
 python animations.py      # Animation system
 python config_manager.py  # Configuration manager
 ```
+
+### Dependency Checking
+Both launchers automatically check for required dependencies and provide installation guidance for missing modules.
 
 ## Configuration
 

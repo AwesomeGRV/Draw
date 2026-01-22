@@ -18,9 +18,16 @@ seaborn>=0.11.0
 
 # Image processing
 Pillow>=8.3.0
+opencv-python>=4.5.0
 
 # GUI and graphics
 pygame>=2.1.0
+
+# Web framework
+flask>=2.0.0
+
+# System monitoring
+psutil>=5.8.0
 
 # Standard library modules (included with Python)
 # turtle - Graphics library for drawing patterns
@@ -37,6 +44,9 @@ pygame>=2.1.0
 # enum - Enumeration types
 # math - Mathematical functions
 # colorsys - Color space conversions
+# socket - Network programming
+# threading - Thread-based parallelism
+# subprocess - Process management
 
 # Development and testing (optional)
 pytest>=6.0.0
