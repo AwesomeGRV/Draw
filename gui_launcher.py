@@ -90,6 +90,30 @@ class ProgramLauncherGUI:
                 'icon': '🧬',
                 'requirements': ['random', 'string', 'time']
             },
+            'guess_number_game': {
+                'name': 'Guess the Number Game',
+                'description': 'Interactive number guessing game with difficulty levels',
+                'category': 'Games',
+                'file': 'guess_number_game.py',
+                'icon': '🎯',
+                'requirements': []
+            },
+            'chatbot_openai': {
+                'name': 'AI Chatbot',
+                'description': 'Interactive AI chatbot with OpenAI integration',
+                'category': 'AI Tools',
+                'file': 'chatbot_openai.py',
+                'icon': '🤖',
+                'requirements': ['openai']
+            },
+            'folder_organizer': {
+                'name': 'Folder Organizer',
+                'description': 'Automatically organize files by type, date, or size',
+                'category': 'Utilities',
+                'file': 'folder_organizer.py',
+                'icon': '🗂️',
+                'requirements': []
+            },
             'grv_styles': {
                 'name': 'GRV Text Styles',
                 'description': 'Display GRV in 10 different artistic styles',

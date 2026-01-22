@@ -26,6 +26,9 @@ pygame>=2.1.0
 # Web framework
 flask>=2.0.0
 
+# AI and machine learning
+openai>=0.27.0
+
 # System monitoring
 psutil>=5.8.0
 

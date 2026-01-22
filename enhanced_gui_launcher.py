@@ -191,6 +191,48 @@ class EnhancedGUILauncher:
                 'rating': 3.9,
                 'users': '720'
             },
+            'guess_number_game': {
+                'name': 'Guess the Number Game',
+                'description': 'Interactive number guessing game with difficulty levels',
+                'category': 'Games',
+                'file': 'guess_number_game.py',
+                'icon': '🎯',
+                'color': '#FF6B9D',
+                'gradient': '#FF8FAB',
+                'requirements': [],
+                'difficulty': 'Beginner',
+                'features': ['Multiple difficulty levels', 'Statistics tracking', 'Hints system'],
+                'rating': 4.6,
+                'users': '890'
+            },
+            'chatbot_openai': {
+                'name': 'AI Chatbot',
+                'description': 'Interactive AI chatbot with OpenAI integration',
+                'category': 'AI Tools',
+                'file': 'chatbot_openai.py',
+                'icon': '🤖',
+                'color': '#667EEA',
+                'gradient': '#8B9DFF',
+                'requirements': ['openai'],
+                'difficulty': 'Intermediate',
+                'features': ['Multiple personas', 'Conversation history', 'GUI interface'],
+                'rating': 4.8,
+                'users': '1.2k'
+            },
+            'folder_organizer': {
+                'name': 'Folder Organizer',
+                'description': 'Automatically organize files by type, date, or size',
+                'category': 'Utilities',
+                'file': 'folder_organizer.py',
+                'icon': '🗂️',
+                'color': '#48C9B0',
+                'gradient': '#6DD5CC',
+                'requirements': [],
+                'difficulty': 'Intermediate',
+                'features': ['Multiple organization methods', 'File analysis', 'Duplicate handling'],
+                'rating': 4.5,
+                'users': '650'
+            },
             'grv_styles': {
                 'name': 'GRV Text Styles',
                 'description': 'Display GRV in 10 different artistic styles',

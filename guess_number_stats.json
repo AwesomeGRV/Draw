@@ -1,0 +1,24 @@
+{
+  "games_played": 1,
+  "total_guesses": 2,
+  "best_score": Infinity,
+  "average_guesses": 2.0,
+  "difficulty_stats": {
+    "easy": {
+      "games": 0,
+      "best_score": Infinity
+    },
+    "medium": {
+      "games": 1,
+      "best_score": Infinity
+    },
+    "hard": {
+      "games": 0,
+      "best_score": Infinity
+    },
+    "expert": {
+      "games": 0,
+      "best_score": Infinity
+    }
+  }
+}
