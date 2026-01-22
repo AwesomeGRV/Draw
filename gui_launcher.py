@@ -90,6 +90,14 @@ class ProgramLauncherGUI:
                 'icon': '🧬',
                 'requirements': ['random', 'string', 'time']
             },
+            'grv_styles': {
+                'name': 'GRV Text Styles',
+                'description': 'Display GRV in 10 different artistic styles',
+                'category': 'Fun',
+                'file': 'grv_styles.py',
+                'icon': '🎨',
+                'requirements': []
+            },
             'mathstables': {
                 'name': 'Multiplication Table Generator',
                 'description': 'Generates customizable multiplication tables',
