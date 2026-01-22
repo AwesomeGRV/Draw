@@ -114,6 +114,39 @@ class WebLauncher:
                 'difficulty': 'Intermediate',
                 'features': ['Evolution visualization', 'Performance metrics', 'Configurable parameters']
             },
+            'guess_number_game': {
+                'name': 'Guess the Number Game',
+                'description': 'Interactive number guessing game with difficulty levels',
+                'category': 'Games',
+                'file': 'guess_number_game.py',
+                'icon': '🎯',
+                'color': '#FF6B9D',
+                'requirements': [],
+                'difficulty': 'Beginner',
+                'features': ['Multiple difficulty levels', 'Statistics tracking', 'Hints system']
+            },
+            'chatbot_openai': {
+                'name': 'AI Chatbot',
+                'description': 'Interactive AI chatbot with OpenAI integration',
+                'category': 'AI Tools',
+                'file': 'chatbot_openai.py',
+                'icon': '🤖',
+                'color': '#667EEA',
+                'requirements': ['openai'],
+                'difficulty': 'Intermediate',
+                'features': ['Multiple personas', 'Conversation history', 'GUI interface']
+            },
+            'folder_organizer': {
+                'name': 'Folder Organizer',
+                'description': 'Automatically organize files by type, date, or size',
+                'category': 'Utilities',
+                'file': 'folder_organizer.py',
+                'icon': '🗂️',
+                'color': '#48C9B0',
+                'requirements': [],
+                'difficulty': 'Intermediate',
+                'features': ['Multiple organization methods', 'File analysis', 'Duplicate handling']
+            },
             'grv_styles': {
                 'name': 'GRV Text Styles',
                 'description': 'Display GRV in 10 different artistic styles',
