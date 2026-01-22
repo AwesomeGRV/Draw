@@ -360,8 +360,28 @@ def main():
     print("Checking dependencies...")
     check_dependencies()
     
-    launcher = ProgramLauncher()
-    launcher.run()
+    print("\nChoose launcher type:")
+    print("1. GUI Launcher (Recommended)")
+    print("2. CLI Launcher")
+    
+    choice = input("Enter choice (1-2): ").strip()
+    
+    if choice == "1":
+        try:
+            import gui_launcher
+            gui_launcher.main()
+        except ImportError:
+            print("GUI launcher not available. Falling back to CLI launcher...")
+            launcher = ProgramLauncher()
+            launcher.run()
+        except Exception as e:
+            print(f"Error starting GUI launcher: {e}")
+            print("Falling back to CLI launcher...")
+            launcher = ProgramLauncher()
+            launcher.run()
+    else:
+        launcher = ProgramLauncher()
+        launcher.run()
 
 
 if __name__ == "__main__":
